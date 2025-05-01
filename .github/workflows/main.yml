@@ -104,7 +104,6 @@ jobs:
         cd frontend/
         npm ci
     - name: Test frontend
-      # Запускаем тесты
       run: |
         cd frontend/
         npm run test
@@ -146,5 +145,4 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          # Тут вместо username должен быть ваш логин на Docker Hub
           tags: ekttd/taski_gateway:latest
